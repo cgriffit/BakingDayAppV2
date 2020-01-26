@@ -14,12 +14,6 @@
     margin: 0 auto;
     width: 90%;
 }
-button {
-    outline: none;
-}
-ul li {
-    line-height: 2em;
-}
 
 /* Header Styles */
 header {
@@ -29,7 +23,7 @@ header {
     display: flex;
     font-family: 'Quando', serif;
     justify-content: flex-end;
-    padding: 1em;
+    padding: 1.25em;
 }
 .menu-link {
     color: white;
@@ -39,7 +33,7 @@ header {
 
 /* Dropdown Menu Styles */
 #yearsDropdown {
-    margin-top: 2.5em;
+    margin-top: 2em;
     margin-left: -3.75em;
     padding: 0 0.75em;
     position: relative;
@@ -47,6 +41,7 @@ header {
 }
 #yearsDropdown li a {
     color: white;
+    line-height: 2em;
     text-decoration: none;
 }
 .hidden {
@@ -68,124 +63,33 @@ h1 {
     background-color: #1D3759;
     color: white;
     font-family: 'Brawler', sans-serif;
-    min-height: 57.5vh;
-}
-.container.empty {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
 }
 .container .wrapper {
     display: flex;
     justify-content: space-between;
 }
+
+/* Bake List Styles */
 .groupContainer {
     border: 1px solid white;
     box-shadow: .75px .75px 1.25px 1.5px;
     color: white;
-    margin: 2em 0.75em;
+    margin: 2em 0.5em;
     padding: 1em;
 }
 .groupTitle {
     font-size: 2rem;
     margin-bottom: 0.3em;
 }
-ul li {
-    line-height: 2em;
-}
-#addBtnContainer {
-    display: flex;
-    justify-content: space-around;
-    margin: 0 auto;
-    width: 40%;
-}
-#addBtnContainer button {
-    background-color: #1D3759;
-    border: 2px solid white;
-    border-radius: 4px;
-    color: white;
-    font-size: 1em;
-    padding: 1.25em 1em;
-}
-#addBtnContainer button:hover {
-    background-color: white;
-    border: thick double #1D3759;
-    color: #1D3759;
-}
-#addBtnContainer button:active {
-    transform: scale(0.95);
-}
-h3 {
-    margin: 0 auto;
-}
-
-/* Baked Good Entry Modal */
-#bakedGoodEntryDialog {
-    background-color: #D91136;
-    border: none;
-    color: white;
-}
-#bakedGoodEntryDialog form {
-    padding: 1em;
-}
-#bakedGoodEntryDialog form div {
-    padding: 1em;
-}
-#bakeTypeRadio {
-    display: flex;
-}
-#bakeTypeRadio input[type="radio"] {
-    opacity: 0;
-    position: fixed;
-    width: 0;
-}
-#bakeTypeRadio label {
-    margin: 0 10px;
-}
-#bakeTypeRadio label:hover, #bakeTypeRadio input[type="radio"]:checked+label {
-    background-color: white;
-    color: #D91136;
-}
-input[type="text"] {
-    display: block;
+.groupContainer input {
     font-size: 16px;
-    margin: 0 auto;
     outline: none;
     padding: 5px 10px;
-    width: 90%;
 }
-#bakeTypeRadio label, #submitBtn {
-    border: 2px solid white;
-    border-radius: 4px;
-    font-size: 16px;
-    padding: 10px 20px;
+.groupContainer ul li {
+    line-height: 2em;
+    padding-left: 5px;
 }
-#submitBtn {
-    background-color: white;
-    color: #D91136;
-    display: block;
-    font-size: 16px;
-    margin: 0 auto;
-    outline: none;
-}
-#submitBtn:hover {
-    border: thick double #D91136;
-}
-#submitBtn:active {
-    transform: scale(0.95);
-}
-dialog::backdrop {
-    backdrop-filter: blur(3px);
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-/* Footer Styles */
-footer {
-    background-color: #4EA664;
-    color: white;
-    padding: 1.25em;
-}
-footer .wrapper {
-    display: flex;
-    justify-content: space-around;
+.groupContainer ul li:not(:last-child) {
+    border-bottom: 2px solid;
 }

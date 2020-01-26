@@ -38,71 +38,30 @@
                 <h1>BAKING EXTRAVAGANZA TRACKER</h1>
             </div>
         </div>
-        <div class="container empty">
+        <div class="container">
             <!-- ====== Bake Lists ======-->
             <div class="wrapper">
-                <h3>Nothing has been added yet!</h3>
-                <div class="groupContainer hidden" id="cookiesContainer">
+                <div class="groupContainer" id="cookiesContainer">
                     <h2 class="groupTitle">COOKIES</h2>
                     <ul id="cookie-list">
-                        <!-- <li class="cookiesItem">Brown Butter Snickerdoodles</li>
-                        <li class="cookiesItem">Chocolate Gingerbread Sandwich Cookies</li>
-                        <li class="cookiesItem">Moon Pies</li>
-                        <li class="cookiesItem">Sugar Cookies</li> -->
                     </ul>
+                    <input type="text" name="cookie-add" id="cookie-add" placeholder="Add A Cookie">
                 </div>
-                <div class="groupContainer hidden" id="candiesContainer">
+                <div class="groupContainer" id="candiesContainer">
                     <h2 class="groupTitle">CANDIES</h2>
                     <ul id="candy-list">
-                        <li class="candiesItem">Brown Butter Snickerdoodles</li>
-                        <li class="candiesItem">Chocolate Gingerbread Sandwich Cookies</li>
-                        <li class="candiesItem">Moon Pies</li>
-                        <li class="candiesItem">Sugar Cookies</li>
                     </ul>
+                    <input type="text" name="candy-add" id="candy-add" placeholder="Add A Candy">
                 </div>
-                <div class="groupContainer hidden">
+                <div class="groupContainer">
                     <h2 class="groupTitle">APPETIZERS</h2>
                     <ul id="appetizer-list">
-                        <li class="appsItem">Brown Butter Snickerdoodles</li>
-                        <li class="appsItem">Chocolate Gingerbread Sandwich Cookies</li>
-                        <li class="appsItem">Moon Pies</li>
-                        <li class="appsItem">Sugar Cookies</li>
                     </ul>
+                    <input type="text" name="appetizer-add" id="appetizer-add" placeholder="Add An Appetizer">
                 </div>
-            </div>
-            <div id="addBtnContainer">
-                <button id="addBtn">Add a Cookie/Candy/Appetizer</button>
-            </div>
-            <!-- ====== Form to Add Bakes ======-->
-            <div>
-                <dialog id="bakedGoodEntryDialog">
-                    <form action="" method="dialog" id="bakedGoodEntryForm">
-                        <div id="bakeTypeRadio">
-                            <input type="radio" name="bakeType" id="cookie" value="cookie">
-                            <label for="cookie">Cookie</label>
-
-                            <input type="radio" name="bakeType" id="candy" value="candy">
-                            <label for="candy">Candy</label>
-
-                            <input type="radio" name="bakeType" id="appetizer" value="appetizer">
-                            <label for="appetizer">Appetizer</label>
-                        </div>
-                        <div>
-                            <input type="text" name="bakeName" id="bakeName" placeholder="What's it called?">
-                        </div>
-                        <div>
-                            <input type="button" id="submitBtn" value="Add It To The List!">
-                        </div>
-                    </form>
-                </dialog>
             </div>
         </div>
     </main>
-    <footer>
-        <div class="wrapper">
-
-        </div>
-    </footer>
     <script src="js/app.js"></script>
 </body>
 
